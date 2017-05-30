@@ -43,6 +43,7 @@ public class CellSheetController {
 
   @RequestMapping("/randomsheet")
   public Set<Cell> getRandomSheet() {
+    // TODO: this logic should be moved to service layer
     Random random = new Random();
     int width = 15;
     int height = 15;
