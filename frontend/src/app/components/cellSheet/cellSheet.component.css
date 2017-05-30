@@ -1,0 +1,9 @@
+.cell-sheet__item {
+  border: 1px solid #555555;
+  width: 10px;
+  height: 10px;
+}
+
+.cell-sheet__item--alive {
+    background: red;
+}

@@ -1,0 +1,5 @@
+<table>
+    <tr *ngFor="let row of table">
+        <td *ngFor="let cell of row" [ngClass]="{'cell-sheet__item': true, 'cell-sheet__item--alive': cell}"></td>
+    </tr>
+</table>

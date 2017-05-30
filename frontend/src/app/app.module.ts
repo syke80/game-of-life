@@ -4,17 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CellSheetComponent } from './components/cellSheet/cellSheet.component';
+import { CellsService } from './services/cells.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CellSheetComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    CellsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
