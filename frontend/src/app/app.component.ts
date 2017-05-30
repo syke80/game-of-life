@@ -13,6 +13,10 @@ export class AppComponent {
   constructor(private tableService:CellsService) {
   }
 
+  private onCellsUpdated(cells: CellModel[]) {
+    this.cells = cells;
+  }
+
   private loadRandomTable():void {
     this.tableService.getRandomCells()
       .subscribe(
